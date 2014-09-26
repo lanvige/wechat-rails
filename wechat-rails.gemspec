@@ -11,10 +11,10 @@ Gem::Specification.new do |s|
   s.summary     = "DSL for wechat message handling and api"
   s.description = "API and message handling for wechat in rails environment"
 
-  s.files = Dir["{bin app,config,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{bin,app,config,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   s.executables << 'wechat'
 
-  s.add_dependency "rails", ">= 3.2.14"
+  s.add_dependency "rails", ">= 4.1.5"
   s.add_dependency "nokogiri", '>=1.6.0'
   s.add_dependency 'rest-client'
   s.add_development_dependency 'rspec-rails'
